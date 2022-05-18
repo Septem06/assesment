@@ -1,30 +1,9 @@
-def welcome(question):
-    print("Hello")
-
-# This is what will check if you have play the game before
-
-
-def yes_no(question_text):
-    while True:
-        answer = input(question_text).lower()
-        if answer == "yes" or answer == "y":
-            answer = "Yes"
-            return answer
-        elif answer == "no" or answer == "n":
-            answer = "No"
-            return answer
-        else:
-            print("please answer 'yes' or 'no'")
-
-
-
 import random
 
 
 def get_name():
     name_local = input("what is your name: ")
     return name_local
-
 def get_age():
     age_local = int(input("how old are you: "))
     return age_local
@@ -48,11 +27,3 @@ for i in number:
         print("##### correct! ####\n")
     else:
         print("xxxx incorrect xxxx")
-
-
-
-show_instructions = yes_no("have you played this game before? ")
-print(f"you entered'{show_instructions}'")
-print()
-having_fun = yes_no("Are you having fun? ")
-print(f"you entered'{having_fun}'")o
