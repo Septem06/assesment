@@ -55,4 +55,4 @@ show_instructions = yes_no("have you played this game before? ")
 print(f"you entered'{show_instructions}'")
 print()
 having_fun = yes_no("Are you having fun? ")
-print(f"you entered'{having_fun}'")o
+print(f"you entered'{having_fun}'")
