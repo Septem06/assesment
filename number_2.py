@@ -11,5 +11,12 @@ numbers = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu", "waru", "iwa", 
 e_number = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 
 question = random.choice(numbers)
-attemt = input(f"what is abbreviation for {question}: ")
+attempt = input(f"what is abbreviation for {question}: ")
 
+answer_index = numbers.index(question)
+answer = e_number[answer_index]
+
+if attempt == answer:
+      print("#### CORRECT! ####\n")
+else:
+      print("XXXX INCORRECT XXXX\n")
