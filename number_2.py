@@ -1,22 +1,24 @@
 import random
 
-# this example uses two ordinary lists (1,D)
+print("This is a test is about commonly used maori number. \n"
+      "You will need to enter the abbreviation/ number which applies.")
 
-print("this is a test about numbers and what they are in maori.\n"
-      "you will have to type the maori word for a number\n")
 
-# 1st list
-numbers = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu", "waru", "iwa", "tekau"]
-# 2nd list(e_number meaning the english version)
-e_number = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+# 1st list(this list
+numbers = [["tahi", "1"], ["rua", "2"], ["toru", "3"], ["wha", "4"], ["rima", "5"],
+           ["ono", "6"], ["whitu", "7"], ["waru", "8"], ["iwa", "9"], ["tekau", "10"]]
 
-question = random.choice(numbers)
-attempt = input(f"what is abbreviation for {question}: ")
+choice = input("enter this letter to start: 'n' : ")
+if choice == "n":
+    choice = numbers
 
-answer_index = numbers.index(question)
-answer = e_number[answer_index]
 
-if attempt == answer:
-      print("#### CORRECT! ####\n")
-else:
-      print("XXXX INCORRECT XXXX\n")
+random.shuffle(choice)
+
+for i in choice:
+    answer = input("Enter the abbreviation which applies {}: ".format(i[0]))
+    if answer == i:
+        print("#### correct ####\n")
+
+    else:
+        print("xxxx incorrect xxxx\n")

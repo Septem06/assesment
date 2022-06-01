@@ -1,3 +1,4 @@
+
 import random
 
 print("This is a test about commonly used abbreviations. \n"
@@ -8,16 +9,12 @@ print("This is a test about commonly used abbreviations. \n"
 # Ist list
 
 # 1st list
-numbers = ["tahi", "rua", "toru", "wha", "rima", "ono", "whitu", "waru", "iwa", "tekau"]
-# 2nd list(e_number meaning the english version)
-e_number = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+numbers = [["tahi", "1"], ["rua", "2"], ["toru", "3"], ["wha", "4"], ["rima", "5"],
+           ["ono", "6"], ["whitu", "7"], ["waru", "8"], ["iwa", "9"], ["tekau", "10"]]
 
 choice = input("enter test: 'n' for numbers: ")
 if choice == "n":
-    choice = e_number
-else:
     choice = numbers
-
 
 random.shuffle(choice)
 
@@ -27,4 +24,4 @@ for i in choice:
         print("#### correct ####\n")
 
     else:
-        print("xxxx incorrect xxxx\n")
+        print("xxxx incorrect xxxx")
