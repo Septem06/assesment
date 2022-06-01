@@ -19,5 +19,4 @@ show_instructions = yes_no("have you played this game before? ")
 def have_played(show_instructions):
     while True:
         answer = yes_no(print(f"you entered'{show_instructions}'"))
-    if answer == yes_no('tell instructions'):
-    
+    if answer == yes
