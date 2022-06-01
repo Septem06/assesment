@@ -12,18 +12,9 @@ def yes_no2(question_text):
         else:
             print("please answer 'yes' or 'no'")
 
-
-
-
-show_instructions = yes_no2("have you played this game before? ")
-def have_played(show_instructions):
+def havent_played(show_instructions):
     while True:
-        answer = (print(f"you entered'{show_instructions}'"))
-        if answer == "yes"(print("let get started!")):
-            return answer
-
-
-
+        an
 
 
 
