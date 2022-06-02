@@ -18,23 +18,30 @@ import random
 
 
 
-show_instructions = yes_no("have you played this game before? ")
-def have_played(show_instructions):
+def havent_played(show_instructions):
     while True:
-        answer = yes_no(print(f"you entered'{show_instructions}'"))
-        if answer == yes_no('tell instructions'):
+        answer = input(show_instructions).lower()
+        if answer == "yes" or answer == "y":
+            answer = "Yes"
+            print("lets play")
+            return answer
+        elif answer == "no" or answer == "n":
+            answer = "No"
+            print(f"\nthis is a test about maori numbers. \n"
+                  "you will need to enter the number that applies\n"
+                  "e.g 1 for tahi or 2 for rua \n")
+            return answer
+        else:
+            print("please answer 'yes' or 'no'")
 
 
-
-
+show_instructions = havent_played("have you played this game before")
+print(f"you entered'{show_instructions}'")
+print()
 
 
 name = "player1" #1 function
-print(f"\nhi {name}. you might find this a bit easy.\n"
-      "\nthis is a test about maori numbers. \n"
-      "you will need to enter the number that applies\n"
-      "e.g 1 for tahi or 2 for rua \n"
-      "here is a practice for u \n")
+print(f"here is a practice for u \n")
 
 number = [["tahi", "1"], ["rua", "2"], ["toru", "3"]]
 
@@ -74,3 +81,8 @@ for i in number:
 print()
 having_fun = yes_no("Are you having fun? ")
 print(f"you entered'{having_fun}'")
+
+# wtpa = want to play again.
+restart = 1
+while restart != "x":
+    input("press any key to start again, or x to exit.")

@@ -1,22 +1,18 @@
-
-
-def yes_no2(question_text):
+def havent_played(show_instructions):
     while True:
-        answer = input(question_text).lower()
+        answer = input(show_instructions)
         if answer == "yes" or answer == "y":
             answer = "Yes"
+            print("lets play")
             return answer
         elif answer == "no" or answer == "n":
             answer = "No"
+            print("this game is made to test you on the maori numbers")
             return answer
         else:
             print("please answer 'yes' or 'no'")
 
-def havent_played(show_instructions):
-    while True:
-        an
 
-
-
-show_instructions = print("this is a game made to help you practice you maori number and "
-                          "to help u remember them.")
+show_instructions = havent_played("have you played this game before")
+print(f"you entered'{show_instructions}'")
+print()

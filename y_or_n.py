@@ -14,5 +14,5 @@ def yes_no(question_text):
 show_instructions = yes_no("have you played this game before? ")
 print(f"you entered'{show_instructions}'")
 print()
-having_fun = yes_no("Are you having fun? ")
-print(f"you entered'{having_fun}'")
+
+restart=1 while restart!= "x": input("press any key to start again, or x to exit.")

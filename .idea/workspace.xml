@@ -31,7 +31,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programmimg/unicorn task/02_yes_no_function_v1.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.show_instructions">
+  <component name="RunManager" selected="Python.main">
     <configuration name="have_you_played" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="assesment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,10 +139,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.show_instructions" />
-        <item itemvalue="Python.have_you_played" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.y_or_n" />
+        <item itemvalue="Python.show_instructions" />
+        <item itemvalue="Python.have_you_played" />
         <item itemvalue="Python.number_2" />
       </list>
     </recent_temporary>
