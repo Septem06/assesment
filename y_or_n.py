@@ -15,4 +15,7 @@ show_instructions = yes_no("have you played this game before? ")
 print(f"you entered'{show_instructions}'")
 print()
 
-restart=1 while restart!= "x": input("press any key to start again, or x to exit.")
+restart = 1
+while restart != "x":
+    input("press any key to start again, or x to exit.")
+    if "x" = exit()

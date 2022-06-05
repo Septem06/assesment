@@ -41,7 +41,7 @@ print()
 
 
 name = "player1" #1 function
-print(f"here is a practice for u \n")
+print(f"here is a practice for you \n")
 
 number = [["tahi", "1"], ["rua", "2"], ["toru", "3"]]
 
@@ -68,7 +68,7 @@ if choice == "n":
     choice = numbers
 
 
-random.shuffle(choice)
+random.shuffle(numbers)
 
 for i in number:
     answer = input(f"Enter the number which applies to {i[0]}: ")
@@ -82,7 +82,4 @@ print()
 having_fun = yes_no("Are you having fun? ")
 print(f"you entered'{having_fun}'")
 
-# wtpa = want to play again.
-restart = 1
-while restart != "x":
-    input("press any key to start again, or x to exit.")
+
