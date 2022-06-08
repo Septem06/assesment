@@ -23,5 +23,4 @@ for i in choice:
     if answer == i[1]:
         print("#### correct ####\n")
 
-    else:
-        print("xxxx incorrect xxxx")
+

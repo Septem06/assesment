@@ -1,19 +1,4 @@
-# This is what will check if you have play the game before
-
-
-def yes_no(question_text):
-    while True:
-        answer = input(question_text).lower()
-        if answer == "yes" or answer == "y":
-            answer = "Yes"
-            return answer
-        elif answer == "no" or answer == "n":
-            answer = "No"
-            return answer
-        else:
-            print("please answer 'yes' or 'no'")
-
-
+# This is what will check if you have play the game beforeyet
 import random
 
 
@@ -58,25 +43,25 @@ for i in number:
 print("This is a test is about commonly used maori number. \n"
       "You will need to enter the abbreviation/ number which applies.")
 
+# Ist list
 
-# 1st list(this list
+# 1st list
 numbers = [["tahi", "1"], ["rua", "2"], ["toru", "3"], ["wha", "4"], ["rima", "5"],
            ["ono", "6"], ["whitu", "7"], ["waru", "8"], ["iwa", "9"], ["tekau", "10"]]
 
-choice = input("enter this letter to start: 'n' : ")
+choice = input("enter test: 'n' for numbers: ")
 if choice == "n":
     choice = numbers
 
+random.shuffle(choice)
 
-random.shuffle(numbers)
-
-for i in number:
-    answer = input(f"Enter the number which applies to {i[0]}: ")
+for i in choice:
+    answer = input("Enter the abbreviation which applies {}: ".format(i[0]))
     if answer == i[1]:
-        print("##### correct! ####\n")
+        print("#### correct ####\n")
+
     else:
         print("xxxx incorrect xxxx")
-
 
 print()
 having_fun = yes_no("Are you having fun? ")
